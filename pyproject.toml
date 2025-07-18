@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "ultralearning-ds-cloud"
+version = "0.1.0"
+description = "A 3-month ultralearning plan to build strong, career-ready skills in Data Science and Cloud Computing."
+authors = ["Geovany Batista Polo LAGUERRE <lgeobatpo98@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+# --- Data Science Core ---
+numpy = "^1.26"
+pandas = "^2.2"
+scikit-learn = "^1.5"
+matplotlib = "^3.8"
+seaborn = "^0.13"
+jupyter = "^1.0"
+notebook = "^7.2"
+
+# --- Cloud & DevOps ---
+boto3 = "^1.34"                # AWS SDK
+google-cloud-storage = "^2.16" # GCP SDK
+docker = "^7.0"
+python-dotenv = "^1.0"
+requests = "^2.32"
+
+# --- MLOps / Workflow ---
+mlflow = "^2.12"
+dvc = "^3.50"
+prefect = "^2.16"
+fastapi = "^0.111"
+uvicorn = "^0.30"
+
+# --- Optional Visualization & Dashboards ---
+plotly = "^5.21"
+dash = "^2.16"
+streamlit = "^1.38"
+
+# --- Linting / Tooling ---
+black = "^24.4"
+ruff = "^0.4"
+pre-commit = "^3.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
